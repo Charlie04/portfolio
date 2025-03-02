@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9fd2ec;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    margin-left: 31%;
+  }
+
+  .navbar ul li a {
+    font-size: 22px;
+    color: rgb(16, 15, 15);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .navbar ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(49, 47, 47);
+    box-shadow: 0 0 10px rgb(14, 13, 13);
+    opacity: 0;
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .navbar ul li a:hover::before {
+    opacity: 1;
+    box-shadow: 0 0 20px rgb(74, 72, 72), 0 0 40px rgb(34, 24, 24);
+  }
+
+  .container{
+     margin-top: 10%;
+
+  }
+
+  .profile{
+    border-radius: 10%;
+    height: 400px;
+  }
+
+  .links{
+    margin-top: 10%;
+    display: flex;
+    gap: 35%;
+    margin-left: 12%;
+  }
+
+  .github{
+    font-family: "Montserrat", sans-serif;
+    background-color: #032f44;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    transition: transform 0.3s ease; 
+  }
+  .github:hover{
+    transform: scale(1.2);
+  }
+
+  .name{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-top: 10%;
+  }
+
+  .slogan{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .about{
+    margin-top: 10%;
+    text-align: center;
+    height: 600px;
+  }
+
+  .about-me{
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+
+  .about-para{
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+
+  }
+
+  .experience{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 300px;
+  }
+
+  .exper{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .experience h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    text-decoration: underline;
+  }
+
+  .row{
+    margin-top: 5%;
+  }
+
+ .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    background-color: #032f44;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease; 
+  }
+  
+   .submit-button-wrapper input:hover {
+    background-color: #032f44;
+    transform: scale(1.2);
+  }
+
+  /*-------------------Project --------------------*/
+
+  .project{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+
+  .card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover{
+    transform: scale(1.2); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  }
+  /* -----------Contact Form ------------- */
+  .contact-form-wrapper {
+    padding: 100px 0;
+  }
+  
+  .contact-form {
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .contact-form:hover{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form .form-input,
+  .form-text-area {
+    background-color: #f0f4f5;
+    height: 50px;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-text-area {
+    background-color: #f0f4f5;
+    height: auto;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-control::placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+    opacity: 1;
+  }
+  
+  .contact-form .form-control:-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control::-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #0d1117;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #0d1117;
+  }
+  
+  .contact-form .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
+  .contact-form .description {
+    color: #aeb4b9;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper {
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    background-color: #032f44;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .contact-form .submit-button-wrapper input:hover {
+    background-color: #032f44;
+    transform: scale(1.2);
+  }
+
+
+  /*-------------Footer --------------*/
+  .footer {
+    padding: 40px 0;
+    background-color: #032f44;
+    color: white;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer li {
+    display: inline-block; /* Change to inline-block for horizontal layout */
+    padding: 0 10px;
+}
+
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul a:hover {
+    opacity: 1;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer .social > a:hover {
+    opacity: 0.9;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+.footer .footer-break{
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:white
+    }
